@@ -1,0 +1,15 @@
+version: "2"
+services:
+  console:
+    image: nodesource/nsolid-console
+    container_name: nsolid.console
+    ports:
+      - 9001:9001
+      - 9002:9002
+      - 9003:9003
+      - 6753:6753
+
+    networks:
+      - nsolid
+networks:
+  nsolid:
